@@ -1,0 +1,20 @@
+.body{
+    background-color: #201313;
+}
+.logo{
+    width: 200px;
+    height: auto;
+    margin-left: 10px;
+}
+.nav{
+   position: fixed;
+   top: 10px;
+   left: 230px;
+   font-size: 22px;
+   font-family: "Jet Brains", sans-serif;
+   width: 100%;
+   padding: 10px;
+   background-color: #201313;
+   texh
+   /* text-decoration: none; */
+}
