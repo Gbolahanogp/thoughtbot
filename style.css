@@ -1,61 +1,253 @@
-.body{
-    background-color: #201313;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
-.logo{
-    width: 200px;
-    height: auto;
-    margin-left: 10px;
+
+body {
+    background: #1f1414;
+    color: #f5f5f5;
+    line-height: 1.6;
 }
-.nav{
-   position: absolute;
-   top: 10px;
-   left: 230px;
-   font-size: 22px;
-   font-family: "Jet Brains", sans-serif;
-   width: 100%;
-   padding: 10px;
-   display: inline-block;
-   background-color: #201313;
-   text-decoration: none;
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
 }
-.nav a{
+
+.navbar .logo h2 {
     color: white;
+    font-weight: 700;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
     text-decoration: none;
-    margin-right: 25px;
-    /* background-color: transparent; */
-    /* background-hover-color: red solid; */
+    color: #ddd;
+    font-size: 14px;
 }
-.btn{
-    background-color: red;
+
+.navbar a.active {
+    color: #f7c948;
+}
+
+.cta-btn {
+    background: #e63946;
+    border: none;
+    padding: 10px 18px;
     border-radius: 25px;
-    text-color: white;
     color: white;
-    border: 2px solid red;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero {
+    padding: 60px;
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    color: #cfcfcf;
+}
+
+.hero span {
+    color: #f7c948;
+}
+
+/* TOPICS */
+.topics {
+    display: flex;
+    gap: 12px;
+    padding: 20px 60px;
+    align-items: center;
+}
+
+.topics button {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #444;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.topics .active-topic {
+    background: #f7c948;
+    color: black;
+    border: none;
+}
+
+.topics a {
+    color: #f7c948;
+    text-decoration: none;
+}
+
+/* BLOG SECTION */
+.blog-container {
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-card {
+    padding: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.blog-card h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.blog-card p {
+    color: #cfcfcf;
+    margin-bottom: 10px;
+}
+
+.author {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+.tags {
+    font-size: 12px;
+    color: #f7c948;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    background: #2a1b1b;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 6px;
+    border: none;
+}
+
+.newsletter button {
+    background: #e63946;
+    border: none;
     padding: 10px 20px;
-    text-align: center;
-    /* text-decoration: none; */
-    display: inline-block;
-    font-size: 16px;
-    /* margin: 4px 2px; */
-    /* cursor: pointer; */
-    margin-left: 80%;
-    /* margin-bottom: 205%; */
-}
-.content{
-    margin-top: 100px;
-    margin-left: 10px;
     color: white;
-    font-family: "Jet Brains", sans-serif;
-    text-align: left;
-    margin-left: 20%;
-    border-radius: 25px;
+    border-radius: 20px;
+    cursor: pointer;
 }
-.nav2{
-    position: absolute;
-    border-radius: 25px;
-    text-color: white;
-    color: white;
-    font-size: 22px;
-    font-family: "Jet Brains", sans-serif;    
-    text-decoration: dotted;
+
+/* FEEDS */
+.feeds {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #cfcfcf;
+}
+
+.feeds a {
+    color: #f7c948;
+    text-decoration: none;
+}
+
+/* PAGINATION */
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px;
+}
+
+.pagination a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.pagination a.current {
+    color: #f7c948;
+}
+
+/* FOOTER */
+footer {
+    padding: 60px;
+    border-top: 1px solid #333;
+}
+
+.footer-logo h2 {
+    margin-bottom: 30px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.copyright {
+    color: #777;
+    font-size: 13px;
+}
+
+/* RESPONSIVE BASIC */
+@media (max-width: 1024px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 30px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .blog-container {
+        padding: 20px;
+    }
+
+    .newsletter {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
 }

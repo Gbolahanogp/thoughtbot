@@ -3,53 +3,294 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Thoughtbot Blog Clone</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body">
-   <img src="media/pic/logo.jpeg" alt="thoughtbot-Logo" class="logo">
-   <nav class="nav">
-        <a href="#">Services</a>
-        <a href="#">Industries</a>
-        <a href="#">Case Studies</a>
-        <a href="#">Resources</a>
-        <a href="#">Blog</a>
-   </nav>
-   <button  class="btn">
-        Let's get started !
-   </button>
-   <div class="content">
-   <h1 style="font-size: 49.5px;">Giant Robots Smashing Into<br> Other Giant Robots</h1>
-    <p style="font-size: 27px;">Written by thoughtbot, your expert partner for design and development.</p>
-    
-</div>
+<body>
 
-<nav class="nav2" style="margin-left: 20%;">
-<button style="background-color: yellow; border-radius: 20px; padding: 10px 20px; font-size: 18px;">
-        All Topics
-    </button>
-    <button style="background-color: transparent; border: 1px solid white; border-radius: 20px; padding: 10px 20px; font-size: 18px; color: white;">
-        Design
-    </button>
-    <button style="background-color: transparent; border: 1px solid white; border-radius: 20px; padding: 10px 20px; font-size: 18px; color: white;">
-        Development
-    </button>
-    <button style="background-color: transparent; border: 1px solid white; border-radius: 20px; padding: 10px 20px; font-size: 18px; color: white;">
-        Product
-    </button>
-    <a href="#" style="text-decoration: dotted 1px; color: white;">More topics</a>
-</nav>
-<div style="margin-top: 100px; padding: 20px; margin-left: 20%; font-size: 25px;">
-    <h3 style="color: white;">The Four Signals of AI Observability</h3>
-    <p style="font-size: 18px; color: white;">
-        Treat your AI feature like a software you can watch, not a model you hope works.<br>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="logo">
+            <h2>thoughtbot</h2>
+        </div>
 
-       <small style="color: yellow;">Matheus Sales </small>June 1, 2026<br>
-       <b>AI, Llm, Observability, Development</b>
-    </p>
-</div>
-<div>
-    
-</div>
+        <nav>
+            <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Industries</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#" class="active">Blog</a></li>
+            </ul>
+        </nav>
+
+        <button class="cta-btn">Let's get started!</button>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Giant Robots Smashing <br> Into Other Giant Robots</h1>
+
+        <p>
+            Written by <span>thoughtbot</span>, your expert partner
+            for design and development.
+        </p>
+    </section>
+
+    <!-- FILTERS -->
+    <section class="topics">
+        <button class="active-topic">All Topics</button>
+        <button>Design</button>
+        <button>Development</button>
+        <button>Product</button>
+        <a href="#">More topics</a>
+    </section>
+
+    <!-- BLOG POSTS -->
+    <section class="blog-container">
+
+        <article class="blog-card">
+            <h2>The Four Signals of AI Observability</h2>
+            <p>
+                Treat your AI feature like a software you can watch,
+                not a model you hope works.
+            </p>
+
+            <div class="author">
+                Matheus Sales – June 1, 2026
+            </div>
+
+            <div class="tags">
+                AI, LLM, OBSERVABILITY, DEVELOPMENT
+            </div>
+        </article>
+
+        <!-- Newsletter -->
+
+        <div class="newsletter">
+            <div>
+                <h2>Sign up to receive a weekly recap from thoughtbot</h2>
+
+                <input
+                    type="email"
+                    placeholder="Your email address"
+                >
+            </div>
+
+            <button>Subscribe</button>
+        </div>
+
+        <div class="feeds">
+            <p>Looking for even more ways to stay connected?</p>
+            <a href="#">Check out our feeds →</a>
+        </div>
+
+        <article class="blog-card">
+            <h2>
+                Can you really launch a tech business with a no-code app builder?
+            </h2>
+
+            <p>
+                AI app builders promise to turn anyone into a founder overnight,
+                but is the code actually production-ready?
+            </p>
+
+            <div class="author">
+                Michelle Taute – May 29, 2026
+            </div>
+
+            <div class="tags">
+                AI, AI DESIGN, PRODUCT STRATEGY
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>Giant Robots Podcast Ep 612: Do fish drink?</h2>
+
+            <p>
+                The Giant Robots trio are back to discuss development,
+                AI and software engineering.
+            </p>
+
+            <div class="author">
+                Chad Pytel – May 28, 2026
+            </div>
+
+            <div class="tags">
+                PODCAST
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>This week in #dev (May 15, 2026)</h2>
+
+            <p>
+                Highlights of what happened in our #dev channel this week.
+            </p>
+
+            <div class="author">
+                thoughtbot – May 28, 2026
+            </div>
+
+            <div class="tags">
+                CSS, TIL, TIP, JAVASCRIPT
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>Lost, forgotten, and unfamiliar HTML</h2>
+
+            <p>
+                Automated scans taught me about some web stuff
+                I forgot or never knew.
+            </p>
+
+            <div class="author">
+                Dave Iverson – May 27, 2026
+            </div>
+            <div class="tags">
+                WEB, ACCESSIBILITY
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>Why Duck Typer?</h2>
+
+            <p>
+                Some say interface tests are fragile and shouldn't
+                be written.
+            </p>
+
+            <div class="author">
+                Thiago Araújo Silva – May 26, 2026
+            </div>
+
+            <div class="tags">
+                RUBY, TESTING, OPEN SOURCE
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>Biometrics authentication for your mobile app</h2>
+
+            <p>
+                Practical approaches to add biometrics authentication
+                to a mobile app.
+            </p>
+
+            <div class="author">
+                Rakesh Arunachalam – May 25, 2026
+            </div>
+
+            <div class="tags">
+                REACT NATIVE, IOS, ANDROID
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>Claude Code + Figma for non-technical designers</h2>
+
+            <p>
+                Moving from Figma to Claude Code and back again
+                is now possible.
+            </p>
+
+            <div class="author">
+                Ferdia Kenny – May 22, 2026
+            </div>
+
+            <div class="tags">
+                AI, DESIGN, PRODUCT DESIGN
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>Why thoughtbot is joining the Ruby Alliance</h2>
+
+            <p>
+                Here's why we believe shared stewardship matters
+                for Ruby's future.
+            </p>
+
+            <div class="author">
+                Chad Pytel – May 20, 2026
+            </div>
+
+            <div class="tags">
+                RUBY, OPEN SOURCE, COMMUNITY
+            </div>
+        </article>
+
+        <article class="blog-card">
+            <h2>Summer Special: We're Taking London Tech Leaders Outdoors</h2>
+
+            <p>
+                Relaxed meetup gatherings across London's best
+                outdoor venues.
+            </p>
+
+            <div class="author">
+                Chad Pytel – May 19, 2026
+            </div>
+
+            <div class="tags">
+                EVENTS, COMMUNITY
+            </div>
+        </article>
+
+    </section>
+
+    <!-- PAGINATION -->
+
+    <div class="pagination">
+        <a href="#" class="current">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">Next ></a>
+        <a href="#">Last »</a>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+            <h2>thoughtbot</h2>
+        </div>
+
+        <div class="footer-links">
+
+            <div>
+                <a href="#">Services</a>
+                <a href="#">Case Studies</a>
+                <a href="#">Resources</a>
+                <a href="#">Let's Talk</a>
+            </div>
+
+            <div>
+                <a href="#">Our Company</a>
+                <a href="#">Careers</a>
+                <a href="#">Purpose</a>
+                <a href="#">Blog</a>
+                <a href="#">Events</a>
+            </div>
+
+            <div>
+                <a href="#">Mastodon</a>
+                <a href="#">GitHub</a>
+                <a href="#">YouTube</a>
+                <a href="#">Twitch</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 thoughtbot, inc.
+        </p>
+
+    </footer>
+
 </body>
 </html>
